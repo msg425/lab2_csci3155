@@ -54,6 +54,7 @@ object Lab2 extends jsy.util.JsyApplication {
     require(isValue(v))
     (v: @unchecked) match {
       case N(n) => n
+      case B(n) => if (n) 1 else 0
       case _ => throw new UnsupportedOperationException
     }
   }
