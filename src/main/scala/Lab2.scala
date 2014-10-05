@@ -103,7 +103,7 @@ object Lab2 extends jsy.util.JsyApplication {
         /* * */
         case Times => N(toNumber(eToVal(e1)) * toNumber(eToVal(e2)))
          /* / */
-        case Div => e1
+        case Div => N(toNumber(eToVal(e1)) / toNumber(eToVal(e2)))
         /* === */
         case Eq => e1
         /* !=== */
