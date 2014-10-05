@@ -99,7 +99,7 @@ object Lab2 extends jsy.util.JsyApplication {
         /* + */
         case Plus => N(toNumber(eToVal(e1)) + toNumber(eToVal(e2)))
         /* - */
-        case Minus => e1
+        case Minus => N(toNumber(eToVal(e1)) - toNumber(eToVal(e2)))
         /* * */
         case Times => e1
          /* / */
